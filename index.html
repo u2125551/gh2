@@ -3,48 +3,160 @@
 <html>
 <head>
 <style type="text/css">
-.titlebook{color: blue;}
-.namer{
-	border: 4px solid black;
-	color: blue;
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .top{
+            width: 100%;
+            height: 860px;
+            background-image: url('C:/Users/LENOVO/Documents/GitHub/gh/bac5.jpg');
+            background-repeat:no-repeat;
+            background-size: cover; 
+        }
+        .left{
+            width: 300px;
+            height: 520px;
+            position: absolute;
+            top: 905px;
+            background-image: url('C:/Users/LENOVO/Documents/GitHub/gh/bac6.jpg');
+            background-repeat:no-repeat;
+            background-size: cover; 
+        }
+        .main{
+            width: 640px;
+            height: 520px;
+            position: absolute;
+            left: 308px;
+            top: 905px;
+            background: grey;
+        }
+        .right{
+            width: 308px;
+            height: 520px;
+            position: absolute;
+            left: 948px;
+            top: 905px;
+            background-image: url('C:/Users/LENOVO/Documents/GitHub/gh/bac6.jpg');
+            background-repeat:no-repeat;
+            background-size: cover;  
+        }
+        .bottom{
+            width: 1248px;
+            height: 30px;
+            background: grey;
+            position: absolute;
+            left: 8px;
+            right: 0px;
+            top: 878px;
+            background-image: url('C:/Users/LENOVO/Documents/GitHub/gh/bac8.jpg');
+            background-repeat:no-repeat;
+            background-size: cover;  
+        }
+        .about{
+        	width: 300px;
+        }
+        img{
+        	border-radius: 40%;
+        }
+       
+        .mymove{
+        	width:100px;
+	        height:100px;
+	        background:black;
+	        position:relative;
+	        animation:myfirst 8s linear 1s infinite alternate;
+	      /* Firefox: */
+	       -moz-animation:myfirst 8s linear 1s infinite alternate;
+	      /* Safari and Chrome: */
+	       -webkit-animation:myfirst 8s linear 1s infinite alternate;
+	      /* Opera: */
+	       -o-animation:myfirst 8s linear 1s infinite alternate;
+        }
+        @keyframes myfirst
+{
+	0%   {background:red; left:0px; top:0px;}
+	25%  {background:yellow; left:200px; top:0px;}
+	50%  {background:blue; left:200px; top:200px;}
+	75%  {background:green; left:0px; top:200px;}
+	100% {background:red; left:0px; top:0px;}
 }
+
+@-moz-keyframes myfirst /* Firefox */
+{
+	0%   {background:red; left:0px; top:0px;}
+	25%  {background:yellow; left:200px; top:0px;}
+	50%  {background:blue; left:200px; top:200px;}
+	75%  {background:green; left:0px; top:200px;}
+	100% {background:red; left:0px; top:0px;}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+	0%   {background:red; left:0px; top:0px;}
+	25%  {background:yellow; left:200px; top:0px;}
+	50%  {background:blue; left:200px; top:200px;}
+	75%  {background:green; left:0px; top:200px;}
+	100% {background:red; left:0px; top:0px;}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+	0%   {background:red; left:0px; top:0px;}
+	25%  {background:yellow; left:200px; top:0px;}
+	50%  {background:blue; left:200px; top:200px;}
+	75%  {background:green; left:0px; top:200px;}
+	100% {background:red; left:0px; top:0px;}
+}
+    </style>
+
+
+
 </style>
 	<title class="fir">Home Page</title>
 </head>
 
 
 <body>
-<div><h1 class="namer">WMG 2125551</h1></div>
-<h1 class="titlebook">WMG 2125551</h1>
-<p>by<a href="https://archive.org/stream/the-great-gatsby_1922/the-great-gatsby_djvu.txt">: find txt</a></p>
-<h3>about: postgraduate</h3>
-<h2>Chapter1</h2>
-<p>I n my younger and more vulnerable years my father gave 
-me some advice that I’ve been turning over in my mind 
-ever since. 
-</p>
-<p>'Whenever you feel like criticizing any one,' he told me, 
-'just remember that all the people in this world haven’t had 
-the advantages that you've had. 
-</p>
-<p>
-He didn’t say any more but we’ve always been unusually 
-communicative in a reserved way, and I understood that he 
-meant a great deal more than that. In consequence I’m in¬ 
-clined to reserve all judgments, a habit that has opened up 
-many curious natures to me and also made me the victim 
-of not a few veteran bores. The abnormal mind is quick to 
-detect and attach itself to this quality when it appears in a 
-normal person, and so it came about that in college I was 
-unjustly accused of being a politician, because I was privy 
-to the secret griefs of wild, unknown men. Most of the con¬ 
-fidences were unsought—frequently I have feigned sleep, 
-preoccupation, or a hostile levity when I realized by some 
-unmistakable sign that an intimate revelation was quiver¬ 
-ing on the horizon—for the intimate revelations of young 
-men or at least the terms in which they express them are 
-usually plagiaristic and marred by obvious suppressions. 
-Reserving judgments is a matter of infinite hope. I am still 
-a little afraid of missing something if I forget that, as my fa- </p>
+    <!--头部样式-->
+    <div class="top">
+    <div class="profile">
+    <h3 style="">
+    <a href="https://warwick.ac.uk/" style="background: grey; color:white;font-size: 16px;">Profile</a>
+    <p>/n</p>
+    <a href="https://www.youtube.com/watch?v=Y5q2CaJxVXg" style="background: grey; color:white;font-size: 16px;">video</a>
+    </h3>
+    </div>
+    <div class="mymove">
+    <img src="C:/Users/LENOVO/Documents/GitHub/gh/phome1.jpg" width="130px">
+    </div>
+    </div>
+    <!--侧栏样式-->
+    <div class="left">
+    <div class="about">
+
+    <p style="color: white; font-size: 15px; text-align: center;"> I like to read English story books in my free time. Sometimes I surf the Internet and download the E- books to read. Reading E- books is fun. In addition, it also enlarges my vocabulary words because of the advanced technology and the vivid animations.
+    </p>
+    
+    <p style="color: white; font-size: 15px; text-align: center;">I hope to study both English and computer technology because I am interested in both of the subjects. Maybe one day I could combine both of them and apply to my research in the future.</p>
+    </div>
+    </div>
+    <!--内容样式-->
+    <div class="main">
+    <div class="pho1">
+    <img src="C:/Users/LENOVO/Documents/GitHub/gh/pho5.jpg" width="640px" height="520" class="phome1">
+    </div>
+    </div>
+    <!--右侧样式-->
+    <div class="right">
+    <img src="C:/Users/LENOVO/Documents/GitHub/gh/pho2.jpg" width="305px" height="150">
+    <img src="C:/Users/LENOVO/Documents/GitHub/gh/pho4.jpg" width="305px" height="150">
+    <img src="C:/Users/LENOVO/Documents/GitHub/gh/pho.jpg" width="305px" height="213">
+    </div>
+    <!--底部版权样式-->
+    <div class="bottom" style="text-align: center;"><a href="https://archive.org/stream/the-great-gatsby_1922/the-great-gatsby_djvu.txt">my classmates</a></div>
 </body>
+
 </html>
