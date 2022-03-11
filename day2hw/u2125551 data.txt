@@ -1,0 +1,14 @@
+1. SELECT * FROM `orders` WHERE `category_id` = "2" ;
+2. SELECT * FROM `orders` WHERE `category_id` IN (2,4,5);
+3. SELECT * FROM `orders` WHERE `price` > 35;
+4. SELECT * FROM `orders` WHERE `date_of_birth` < "1980-01-01";
+5. SELECT * FROM `orders` WHERE `customer_surname` = "Davenport" ;
+6. SELECT customer_surname, count(id) as number_of_order from orders WHERE customer_firstname LIKE 'B%' group by customer_firstname ORDER BY number_of_order DESC Limit 1;
+7. SELECT * FROM `orders` WHERE `category_id` = 3 ORDER BY price DESC;
+8. SELECT `trans_date` as 'Transaction Date', `price` as 'Price', `promo_code` as 'Promotion Code' 
+FROM `orders`;
+9. SELECT CONCAT(UPPER(`customer_surname`), ' ', `customer_firstname`) as 'Customer Name', `county` as 'County' FROM `orders`;
+10. SELECT `category_id`, AVG(`price`), MIN(`price`), MAX(`price`) FROM `orders` 
+GROUP BY `category_id`;
+11. SELECT `category_name`, COUNT(*), sum(`price`) FROM( `orders` o JOIN `categories` c ON ( o.category_id = c.id )) GROUP BY `category_id`;
+12. SELECT * FROM (`orders` o JOIN `promotions` p ON ( o.promo_code = p.code )) JOIN `categories` c ON ( o.category_id = c.id );
